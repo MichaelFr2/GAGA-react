@@ -4,6 +4,11 @@
     width: 100%;
     padding: 20px;
 }
+input, select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
 .input {
     width: 100%;
