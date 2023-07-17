@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList/ProductList';
 import Form from './components/Form/Form';
+import VacanciesSearchHeader from './entities/headers/VacanciesSearchHeader/VacanciesSearchHeader';
 
 function App() {
   const {tg, onToggleButton} = useTelegram();
@@ -16,10 +17,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route index element={<ProductList />}/>
-        <Route path={'/form'} element={<Form />}/>
+        {/* <Route path={'/form'} element={<Form />}/> */}
+        <Route path={'/form'} element={<VacanciesSearchHeader />}/>
       </Routes>
     </div>
   );
