@@ -7,7 +7,7 @@ const VacanciesSearchHeader = () => {
   return (
     <>
       <div className={classes.wrapper}>
-      <div className={classes.gridBackground}>
+        <div className={classes.gridBackground}>
           <VacanciesSearchGrid />
         </div>
         <div className={classes.gooseBlock}>

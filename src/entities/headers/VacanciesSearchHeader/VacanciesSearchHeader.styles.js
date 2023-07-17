@@ -2,6 +2,7 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   wrapper: {
+    position: 'relative',
     display: "flex",
     height: '407px',
     width: '100%',
@@ -37,9 +38,9 @@ const useStyles = createUseStyles({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: '99%',
+    width: '100%',
     height: '100%',
-    zIndex: 1
+    zIndex: 1,
   },
 });
 
