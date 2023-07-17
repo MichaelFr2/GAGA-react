@@ -14,11 +14,15 @@ const useStyles = createUseStyles({
     borderBottomLeftRadius: '20px',
     borderBottomRightRadius: '20px',
   },
+  gooseBlock: {
+    zIndex: 2,
+  },
   textBlock: {
     alignItems: 'center',
     color: '#FFF',
     fontStyle: 'normal',
     marginLeft: '28px',
+    zIndex: 2
   },
   mainText: {
     fontSize: 'calc(30px + 1vw)',
@@ -28,6 +32,14 @@ const useStyles = createUseStyles({
   additionalText: {
     fontSize: 'calc(16px + 1vw)',
     fontWeight: 400,
+  },
+  gridBackground: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: 1
   },
 });
 
