@@ -7,9 +7,7 @@ const VacanciesSearchHeader = () => {
   return (
     <>
       <div className={classes.wrapper}>
-        <div className={classes.gridBackground}>
-          <VacanciesSearchGrid />
-        </div>
+        
         <div className={classes.gooseBlock}>
           <VacanciesSearchGoose />
         </div>
@@ -22,6 +20,9 @@ const VacanciesSearchHeader = () => {
           </div>
         </div>
       </div>
+      <div className={classes.gridBackground}>
+          <VacanciesSearchGrid />
+        </div>
     </>
   )
 }
