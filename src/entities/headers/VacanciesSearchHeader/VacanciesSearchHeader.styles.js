@@ -17,7 +17,6 @@ const useStyles = createUseStyles({
   textBlock: {
     alignItems: 'center',
     color: '#FFF',
-    fontFamily: 'SF Pro Display',
     fontStyle: 'normal',
     marginLeft: '28px',
   },
