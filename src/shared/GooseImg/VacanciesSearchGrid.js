@@ -1,7 +1,7 @@
 import React from 'react';
 
 const VacanciesSearchGrid = () => (
-<svg width="350" height="407" viewBox="0 0 350 407" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="407" viewBox="0 0 350 407" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M157.771 -151.975L490.9 376.845" stroke="#FF671F"/>
 <path d="M180.114 -166.051L513.244 362.768" stroke="#FF671F"/>
 <path d="M202.459 -180.127L535.589 348.692" stroke="#FF671F"/>
