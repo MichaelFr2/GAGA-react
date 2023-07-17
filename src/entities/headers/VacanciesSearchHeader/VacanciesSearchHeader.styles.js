@@ -37,7 +37,7 @@ const useStyles = createUseStyles({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: '100%',
+    width: '99%',
     height: '100%',
     zIndex: 1
   },
