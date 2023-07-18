@@ -6,7 +6,6 @@ const useStyles = createUseStyles({
     marginRight: '16px',
     marginTop: '29px',
     position: 'relative', // добавлено
-    backgroundColor: 'white',
   },
   searchField: {
     height: '40px',

@@ -6,7 +6,6 @@ const useStyles = createUseStyles({
     marginRight: '16px',
     marginTop: '30px',
     position: 'relative',
-    backgroundColor: 'white',
   },
   blockName: {
     marginBottom: '18px',
