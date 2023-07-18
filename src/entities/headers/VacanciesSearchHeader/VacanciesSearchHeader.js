@@ -7,7 +7,6 @@ const VacanciesSearchHeader = () => {
   return (
     <>
       <div className={classes.wrapper}>
-        
         <div className={classes.gooseBlock}>
           <VacanciesSearchGoose />
         </div>
