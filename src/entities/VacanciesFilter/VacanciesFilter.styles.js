@@ -15,7 +15,7 @@ const useStyles = createUseStyles({
   filterTitle: {
     fontSize: '16px',
     fontWeight: 400,
-    marginBottom: '5px',
+    marginBottom: '6px',
   },
   filterSelect: {
     height: '49px',
@@ -40,6 +40,7 @@ const useStyles = createUseStyles({
     }
   },
   gradeWrapper: {
+    marginTop: '16px',
     display: 'flex',
     justifyContent: 'space-between',
     flexWrap: 'nowrap',

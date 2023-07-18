@@ -3,7 +3,7 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles({
   wrapper: {
     display: 'flex',
-    width: '126px',
+    width: '110px',
     height: '34px',
     padding: '2px 11px 2px 4px',
     justifyContent: 'center',
