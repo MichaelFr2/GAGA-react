@@ -1,6 +1,7 @@
 import React from 'react'
 import useStyles from './VacanciesFilter.styles'
 import GradeButton from './GradeButton/GradeButton';
+import Ttt from './GradeButton/icons/Ttt'
 const VacanciesFilter = () => {
     const classes = useStyles();
   return (
@@ -39,9 +40,9 @@ const VacanciesFilter = () => {
         <div className={classes.gradeFilter}>
             <div className={classes.filterTitle}>Грейд</div>
             <div className={classes.gradeWrapper}>
-                <GradeButton />
-                <GradeButton />
-                <GradeButton />
+                <GradeButton buttonTitle="Junior" icon={Ttt} />
+                <GradeButton buttonTitle="Middle" icon={Ttt} />
+                <GradeButton buttonTitle="Senior" icon={Ttt} />
             </div>
         </div>
         <button className={classes.doneButton}>Поиск</button>

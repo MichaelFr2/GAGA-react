@@ -1,16 +1,14 @@
-import React from 'react'
-import useStyles from './GradeButton.styles'
-// import ttt from './icons/JuniorIcon';
-import Ttt from './icons/Ttt';
+import React from 'react';
+import useStyles from './GradeButton.styles';
 
-const GradeButton = () => {
-    const classes = useStyles();
+const GradeButton = ({ buttonTitle, icon: Icon }) => {
+  const classes = useStyles();
   return (
     <div className={classes.wrapper}>
-        <div className={classes.buttonTitle}>Junior</div>
-        <Ttt />
+      {Icon && <Icon />}
+      <div className={classes.buttonTitle}>{buttonTitle}</div>
     </div>
-  )
-}
+  );
+};
 
-export default GradeButton
+export default GradeButton;
