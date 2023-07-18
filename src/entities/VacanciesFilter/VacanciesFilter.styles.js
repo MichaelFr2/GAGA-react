@@ -41,9 +41,9 @@ const useStyles = createUseStyles({
   },
   gradeWrapper: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     flexWrap: 'nowrap',
-    gap: '10px',
+    gap: '5px',
   },
   doneButton: {
     marginTop: '40px',
