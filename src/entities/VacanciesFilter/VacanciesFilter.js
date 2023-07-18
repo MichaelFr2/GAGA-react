@@ -1,5 +1,6 @@
 import React from 'react'
 import useStyles from './VacanciesFilter.styles'
+import GradeButton from './GradeButton/GradeButton';
 const VacanciesFilter = () => {
     const classes = useStyles();
   return (
@@ -7,7 +8,7 @@ const VacanciesFilter = () => {
         <div className={classes.blockName}>
             Фильтр
         </div>
-        <div classname={classes.specializationFilter}>
+        <div className={classes.specializationFilter}>
             <div className={classes.filterTitle}>
                 Специализация
             </div>
@@ -19,7 +20,7 @@ const VacanciesFilter = () => {
             <option value="product-manager" >Продакт-менеджер</option>
         </select>
         </div>
-        <div classname={classes.countryFilter}>
+        <div className={classes.countryFilter}>
             <div className={classes.filterTitle}>Страна</div>
             <select className={classes.filterSelect}>
                 <option value="rus" >Россия</option>
@@ -27,7 +28,7 @@ const VacanciesFilter = () => {
                 <option value="geor" >Грузия</option>
             </select>
         </div>
-        <div classname={classes.occupationFilter}>
+        <div className={classes.occupationFilter}>
             <div className={classes.filterTitle}>Занятость</div>
             <select className={classes.filterSelect}>
                 <option value="remote" >Удаленная</option>
@@ -35,14 +36,15 @@ const VacanciesFilter = () => {
                 <option value="no-matter" >Неважно</option>
             </select>
         </div>
-        <div classname={classes.gradeFilter}>
+        <div className={classes.gradeFilter}>
             <div className={classes.filterTitle}>Грейд</div>
-            <select className={classes.filterSelect}>
-                <option value="remote" >Удаленная</option>
-                <option value="office" >В офисе</option>
-                <option value="no-matter" >Неважно</option>
-            </select>
+            <div className={classes.gradeWrapper}>
+                <GradeButton />
+                <GradeButton />
+                <GradeButton />
+            </div>
         </div>
+        <button className={classes.doneButton}>Поиск</button>
     </div>
   )
 }

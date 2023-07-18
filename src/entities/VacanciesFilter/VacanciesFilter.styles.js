@@ -27,7 +27,7 @@ const useStyles = createUseStyles({
     color: '#808080',
     zIndex: 2,
     marginBottom: '15px',
-    '& input, & select': {
+    '& input, & select, & button': {
       '-webkit-appearance': 'none',
       '-moz-appearance': 'none',
       'appearance': 'none',
@@ -39,6 +39,26 @@ const useStyles = createUseStyles({
       fontSize: '16px', 
     }
   },
+  gradeWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'nowrap',
+    gap: '10px',
+  },
+  doneButton: {
+    marginTop: '40px',
+    marginBottom: '40px',
+    display: 'flex',
+    width: '100%',
+    padding: '13px 20px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: '10px',
+    background: '#E44900',
+    color: 'white',
+    outline: 'none',
+    border: '0px',
+  }
 });
 
 export default useStyles;
