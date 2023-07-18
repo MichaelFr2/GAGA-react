@@ -4,7 +4,7 @@ const useStyles = createUseStyles({
   wrapper: {
     marginLeft: '16px',
     marginRight: '16px',
-    marginTop: '30px',
+    marginTop: '14px',
     position: 'relative',
   },
   blockName: {
@@ -59,6 +59,8 @@ const useStyles = createUseStyles({
     color: 'white',
     outline: 'none',
     border: '0px',
+    fontSize: '15px',
+    fontWeight: 400,
   }
 });
 

@@ -4,8 +4,13 @@ const useStyles = createUseStyles({
   wrapper: {
     marginLeft: '16px',
     marginRight: '16px',
-    marginTop: '29px',
-    position: 'relative', // добавлено
+    marginTop: '10px',
+    position: 'sticky',
+    top: '0',
+    zIndex: 10,
+    paddingTop: '19px',
+    paddingBottom: '16px',
+    backgroundColor: 'white',
   },
   searchField: {
     height: '40px',
