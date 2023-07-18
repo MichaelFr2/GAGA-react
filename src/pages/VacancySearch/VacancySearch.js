@@ -3,6 +3,7 @@ import VacanciesSearchHeader from '../../entities/headers/VacanciesSearchHeader/
 import SearchField from '../../shared/components/SearchField/SearchField'
 import VacanciesFilter from '../../entities/VacanciesFilter/VacanciesFilter'
 import useStyles from './VacancySearch.styles'
+import VacancyTemplate from '../../entities/VacancyTemplate/VacancyTemplate'
 const VacancySearch = () => {
   const classes = useStyles();
   return (
@@ -11,6 +12,21 @@ const VacancySearch = () => {
         <VacanciesSearchHeader />
         <SearchField />
         <VacanciesFilter />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+
       </div>
     </>
   )
