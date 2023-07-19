@@ -3,9 +3,10 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles({
   header: {
     backgroundColor: 'white',
+    paddingBottom: '40px',
+
   },
   body: {
-    paddingBottom: '40px',
     backgroundColor: '#F9FAFB',
   },
 });

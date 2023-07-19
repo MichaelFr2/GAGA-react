@@ -13,9 +13,9 @@ const VacancySearch = () => {
         <VacanciesSearchHeader />
         <SearchField />
         <VacanciesFilter />
+        <VacanciesList />
       </div>
       <div className={classes.body}>
-        <VacanciesList />
       </div>
     </>
   )

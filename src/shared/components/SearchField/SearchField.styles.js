@@ -2,8 +2,8 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   wrapper: {
-    marginLeft: '16px',
-    marginRight: '16px',
+    paddingLeft: '16px',
+    paddingRight: '16px',
     marginTop: '10px',
     position: 'sticky',
     top: '0',
@@ -41,8 +41,8 @@ const useStyles = createUseStyles({
   searchIcon: {
     position: 'absolute',
     top: '50%',
-    left: '13px',
-    transform: 'translateY(-50%)',
+    left: '29px',
+    transform: 'translateY(-40%)',
   },
 });
 
