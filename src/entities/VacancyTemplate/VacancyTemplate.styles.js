@@ -4,7 +4,7 @@ const useStyles = createUseStyles({
   vacancyWrapper: {
     marginLeft: '16px',
     marginRight: '16px',
-    marginTop: '12px',
+    marginBottom: '12px',
     top: '0',
     zIndex: 10,
     paddingTop: '19px',
