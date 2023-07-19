@@ -6,6 +6,7 @@ const useStyles = createUseStyles({
     marginRight: '16px',
     marginTop: '14px',
     position: 'relative',
+    paddingBottom: '40px',
   },
   blockName: {
     marginBottom: '18px',
@@ -48,7 +49,6 @@ const useStyles = createUseStyles({
   },
   doneButton: {
     marginTop: '40px',
-    marginBottom: '40px',
     display: 'flex',
     width: '100%',
     padding: '13px 20px',
