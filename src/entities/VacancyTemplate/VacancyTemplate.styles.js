@@ -36,7 +36,23 @@ const useStyles = createUseStyles({
     color: '#333',
     fontSize: '13px',
     fontWeight: 600,
-    marginBottom: '7px',
+    marginBottom: '9px',
+  },
+  filters: {
+    display: 'flex',
+    justifyContent: 'left',
+    alignItems: 'center',    
+  },
+  filter: {
+    color: '#969696',
+    textAlign: 'center',
+    fontSize: '11px',
+    fontWeight: 400,
+    marginRight: '3px',
+    borderRadius: '25px',
+    background: '#F3F3F3',
+    padding: '2px 11px',
+
   },
 });
 

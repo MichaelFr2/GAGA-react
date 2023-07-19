@@ -21,6 +21,9 @@ const VacancyTemplate = () => {
             150 000 - 250 000 руб.
         </div>
         <div className={classes.filters}>
+            <div className={classes.filter}>Junior</div>
+            <div className={classes.filter}>Russia</div>
+            <div className={classes.filter}>Удаленная</div>
         </div>
     </div>
   )
