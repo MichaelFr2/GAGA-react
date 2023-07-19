@@ -1,5 +1,6 @@
 import React from 'react'
 import useStyles from './VacancyTemplate.styles'
+import FavouriteIcon from '../../shared/icons/FavouriteIcon';
 
 const VacancyTemplate = () => {
     const classes = useStyles();
@@ -9,7 +10,9 @@ const VacancyTemplate = () => {
             <div className={classes.companyName}>
                 Ivanov&Co
             </div>
-            <div className={classes.favouriteIcon}></div>
+            <div className={classes.favouriteIcon}>
+                <FavouriteIcon />
+            </div>
         </div>
         <div className={classes.vacancyName}>
             Senior Data Engineer

@@ -4,6 +4,7 @@ const useStyles = createUseStyles({
   vacancyWrapper: {
     marginLeft: '16px',
     marginRight: '16px',
+    marginTop: '12px',
     top: '0',
     zIndex: 10,
     paddingTop: '19px',
@@ -11,6 +12,13 @@ const useStyles = createUseStyles({
     paddingLeft: '16px',
     paddingRight: '14px',
     backgroundColor: 'white',
+    borderRadius: '9px',
+    boxShadow: '0px 0px 23px 0px rgba(54, 77, 96, 0.05)',
+
+  },
+  vacancyHeader: {
+    display: 'flex',
+    justifyContent: 'space-between'
   },
   companyName: {
     color: '#E44900',

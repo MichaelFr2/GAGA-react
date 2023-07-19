@@ -8,10 +8,12 @@ const VacancySearch = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.wrapper}>
+      <div className={classes.header}>
         <VacanciesSearchHeader />
         <SearchField />
         <VacanciesFilter />
+      </div>
+      <div className={classes.body}>
         <VacancyTemplate />
         <VacancyTemplate />
         <VacancyTemplate />
@@ -26,7 +28,6 @@ const VacancySearch = () => {
         <VacancyTemplate />
         <VacancyTemplate />
         <VacancyTemplate />
-
       </div>
     </>
   )

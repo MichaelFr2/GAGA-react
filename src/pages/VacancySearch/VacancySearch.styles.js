@@ -1,9 +1,12 @@
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
-  wrapper: {
+  header: {
     backgroundColor: 'white',
+  },
+  body: {
     paddingBottom: '40px',
+    backgroundColor: '#F9FAFB',
   },
 });
 
