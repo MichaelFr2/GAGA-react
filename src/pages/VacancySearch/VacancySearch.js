@@ -4,6 +4,7 @@ import SearchField from '../../shared/components/SearchField/SearchField'
 import VacanciesFilter from '../../entities/VacanciesFilter/VacanciesFilter'
 import useStyles from './VacancySearch.styles'
 import VacancyTemplate from '../../entities/VacancyTemplate/VacancyTemplate'
+import VacanciesList from '../../features/VacanciesList/VacanciesList'
 const VacancySearch = () => {
   const classes = useStyles();
   return (
@@ -14,20 +15,7 @@ const VacancySearch = () => {
         <VacanciesFilter />
       </div>
       <div className={classes.body}>
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
-        <VacancyTemplate />
+        <VacanciesList />
       </div>
     </>
   )
