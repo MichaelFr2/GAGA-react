@@ -13,6 +13,10 @@ const useStyles = createUseStyles({
     borderRadius: '25px',
     backgroundColor: '#F3F3F3',
   },
+  icon: {
+    width: '20px',
+    height: '26px',
+  },
 });
 
 export default useStyles;

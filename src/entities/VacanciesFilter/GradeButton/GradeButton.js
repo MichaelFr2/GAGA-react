@@ -5,7 +5,7 @@ const GradeButton = ({ buttonTitle, icon: Icon }) => {
   const classes = useStyles();
   return (
     <div className={classes.wrapper}>
-      {Icon && <Icon />}
+      <Icon width="20" height="26" />
       <div className={classes.buttonTitle}>{buttonTitle}</div>
     </div>
   );
