@@ -9,6 +9,17 @@ const VacanciesList = () => {
         <div className={classes.header}>Вакансии</div>
         <VacancyTemplate />
         <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
+        <VacancyTemplate />
     </div>
   )
 }
