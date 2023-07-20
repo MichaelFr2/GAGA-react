@@ -8,7 +8,7 @@ const SearchField = () => {
     <div className={classes.wrapper}>
       <input
         className={classes.searchField}
-        placeholder="Поиск"
+        placeholder="GAGA search"
       />
       <SearchIcon className={classes.searchIcon}/>
     </div>
