@@ -17,6 +17,9 @@ const VacancyDetailed = () => {
     C1 level of English     
   `
   const classes = useStyles();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
         <div className={classes.wrapper}>
