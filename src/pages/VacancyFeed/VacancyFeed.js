@@ -2,10 +2,10 @@ import React from 'react'
 import VacanciesSearchHeader from '../../entities/headers/VacanciesSearchHeader/VacanciesSearchHeader'
 import SearchField from '../../shared/components/SearchField/SearchField'
 import VacanciesFilter from '../../entities/VacanciesFilter/VacanciesFilter'
-import useStyles from './VacancySearch.styles'
+import useStyles from './VacancyFeed.styles'
 import VacancyTemplate from '../../entities/VacancyTemplate/VacancyTemplate'
 import VacanciesList from '../../features/VacanciesList/VacanciesList'
-const VacancySearch = () => {
+const VacancyFeed = () => {
   const classes = useStyles();
   return (
     <>
@@ -21,4 +21,4 @@ const VacancySearch = () => {
   )
 }
 
-export default VacancySearch
+export default VacancyFeed
