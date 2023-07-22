@@ -72,7 +72,7 @@ const useStyles = createUseStyles({
     color: '#000',
     fontSize: '15px',
     fontWeight: 400,
-    whiteSpace: 'pre',
+    whiteSpace: 'pre-line',
   },
   dataBlock: {
     marginTop: '14px',
