@@ -96,7 +96,18 @@ const useStyles = createUseStyles({
     fontSize: '17px',
     fontWeight: 400,
     marginBottom: '35px',
-  }
+  },
+  returnButton: {
+    marginTop: '14px',
+    color: '#969696',
+    fontSize: '14px',
+    fontWeight: 300,
+    paddingLeft: '8px',
+    marginBottom: '32px',
+    outline: 'none',
+    border: '0px',
+    backgroundColor: '#F9FAFB',
+  },
 });
 
 export default useStyles;

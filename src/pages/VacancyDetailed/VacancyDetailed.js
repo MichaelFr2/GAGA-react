@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 import useStyles from './VacancyDetailed.styles'
 
 const VacancyDetailed = () => {
@@ -20,6 +22,8 @@ const VacancyDetailed = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const navigate = useNavigate();
+
   return (
     <>
         <div className={classes.wrapper}>
@@ -46,6 +50,8 @@ const VacancyDetailed = () => {
                 Posted today                     
             </div>
             <button className={classes.doneButton}>Откликнуться</button>
+            <button className={classes.returnButton} onClick={() => navigate(-1)}>Return back</button>
+
         </div>
     </>
   )
