@@ -1,7 +1,9 @@
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
-  wrapper: {
+  wrapper: ({ isClicked }) => ({
+    flexGrow: 1,
+    minWidth: '100px',
     display: 'flex',
     width: '100px',
     height: '34px',
@@ -14,8 +16,12 @@ const useStyles = createUseStyles({
     backgroundColor: '#F3F3F3',
     flexGrow: 1,
     maxWidth: '300px',
-    color: '#6B6B6B',
-  },
+    color: isClicked ? '#fff' : '#6B6B6B',
+    backgroundColor: isClicked ? '#FA631C' : '#F3F3F3', // меняет цвет фона на оранжевый, когда кнопка нажата
+    // другие стили
+  }),
+
+
   icon: {
     width: '20px',
     height: '26px',
