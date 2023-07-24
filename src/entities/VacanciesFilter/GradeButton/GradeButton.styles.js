@@ -12,6 +12,8 @@ const useStyles = createUseStyles({
     flexShrink: 0,
     borderRadius: '25px',
     backgroundColor: '#F3F3F3',
+    flexGrow: 1,
+    maxWidth: '300px',
   },
   icon: {
     width: '20px',

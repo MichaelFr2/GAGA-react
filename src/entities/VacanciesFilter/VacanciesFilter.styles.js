@@ -57,7 +57,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     justifyContent: 'space-between',
     flexWrap: 'nowrap',
-    gap: '5px',
+    gap: '13px',
   },
   doneButton: {
     marginTop: '40px',
