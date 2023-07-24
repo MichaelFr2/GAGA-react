@@ -5,7 +5,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     width: '100px',
     height: '34px',
-    padding: '2px 11px 2px 4px',
+    padding: '2px 11px 4px 4px',
     justifyContent: 'center',
     alignItems: 'center',
     gap: '13px',
@@ -14,6 +14,7 @@ const useStyles = createUseStyles({
     backgroundColor: '#F3F3F3',
     flexGrow: 1,
     maxWidth: '300px',
+    color: '#6B6B6B',
   },
   icon: {
     width: '20px',
