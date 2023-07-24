@@ -9,12 +9,21 @@ const VacancyTemplate = ({ vacancyData }) => {
     const handleRedirect = () => {
         navigate('/vacancy', {state: vacancyData});
     }
+    const renderOccupationType = () => {
+        if(Array.isArray(vacancyData.occupationType)) {
+          if(vacancyData.occupationType[0] !== 'not_mentioned') {
+            return <div className={classes.filter}>{vacancyData.occupationType.join(', ')}</div>;
+          }
+        } else if(vacancyData.occupationType !== 'not_mentioned') {
+          return <div className={classes.filter}>{vacancyData.occupationType}</div>;
+        }
+    }
 
     return (
         <div className={classes.vacancyWrapper} onClick={handleRedirect}>
             <div className={classes.vacancyHeader}>
                 <div className={classes.companyName}>
-                    {vacancyData.companyName}
+                    {vacancyData.companyName === 'not_mentioned' ? '' : vacancyData.companyName}
                 </div>
                 <div className={classes.favouriteIcon}>
                     <FavouriteIcon />
@@ -24,12 +33,12 @@ const VacancyTemplate = ({ vacancyData }) => {
                 {vacancyData.vacancyName}
             </div>
             <div className={classes.vacancySalary}>
-                {vacancyData.salary}
+                {vacancyData.salary === 'not_mentioned' ? 'Зарплата по итогам собеседования' : vacancyData.salary}
             </div>
             <div className={classes.filters}>
-                <div className={classes.filter}>{vacancyData.gradeFilter}</div>
-                <div className={classes.filter}>{vacancyData.countryFilter}</div>
-                <div className={classes.filter}>{vacancyData.occupationFilter}</div>
+                {vacancyData.grade !== 'not_mentioned' && <div className={classes.filter}>{vacancyData.grade}</div>}
+                {vacancyData.country !== 'not_mentioned' && <div className={classes.filter}>{vacancyData.country}</div>}
+                {renderOccupationType()}
             </div>
         </div>
     )
