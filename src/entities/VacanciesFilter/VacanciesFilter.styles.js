@@ -18,6 +18,11 @@ const useStyles = createUseStyles({
     fontWeight: 400,
     marginBottom: '6px',
   },
+  selectWrapper: {
+    position: 'relative',
+    display: 'inline-block',
+    width: '100%',
+  },
   filterSelect: {
     height: '49px',
     padding: '14px 12px',
@@ -34,6 +39,13 @@ const useStyles = createUseStyles({
       'appearance': 'none',
     },
     width: '100%',
+    appearance: 'none',
+  },
+  iconWrapper: {
+    position: 'absolute',
+    right: 15,
+    top: 15,
+    pointerEvents: 'none',
   },
   '@media screen and (-webkit-min-device-pixel-ratio: 0)': {
     'select:focus, textarea:focus, input:focus': {
