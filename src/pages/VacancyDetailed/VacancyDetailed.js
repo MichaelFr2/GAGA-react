@@ -42,8 +42,8 @@ const VacancyDetailed = () => {
                 </div>
             </div>
             <div className={classes.salaryWrapper}>
-                {vacancyData.salary === 'not_mentioned' ? 'Зарплата по итогам собеседования' : vacancyData.salary}
-            </div>
+                {vacancyData.salary === 'not_mentioned' ? 'Зарплата по итогам собеседования' : vacancyData.salary+' '} 
+                {vacancyData.salaryCurrency === 'not_mentioned' ? '' : vacancyData.salaryCurrency}            </div>
             <div className={classes.vacancyBody}>
                 {vacancyData.vacancyText.split('\n').map((line, i) => (
                     <React.Fragment key={i}>

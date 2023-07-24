@@ -33,7 +33,9 @@ const VacancyTemplate = ({ vacancyData }) => {
                 {vacancyData.vacancyName}
             </div>
             <div className={classes.vacancySalary}>
-                {vacancyData.salary === 'not_mentioned' ? 'Зарплата по итогам собеседования' : vacancyData.salary}
+                {vacancyData.salary === 'not_mentioned' ? 'Зарплата по итогам собеседования' : vacancyData.salary+' '} 
+                {vacancyData.salaryCurrency === 'not_mentioned' ? '' : vacancyData.salaryCurrency}
+
             </div>
             <div className={classes.filters}>
                 {vacancyData.grade !== 'not_mentioned' && <div className={classes.filter}>{vacancyData.grade}</div>}
