@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 import useStyles from './VacancyDetailed.styles'
+import ReturnArrow from '../../shared/icons/ReturnArrow';
 
 const VacancyDetailed = () => {
   const location = useLocation();
@@ -24,10 +25,10 @@ const VacancyDetailed = () => {
       return <div className={classes.filter}>{vacancyData.occupationType}</div>;
     }
     }
-
   return (
     <>
         <div className={classes.wrapper}>
+            <button className={classes.returnButton} onClick={() => navigate(-1)}> <ReturnArrow /> Назад </button>
             <div className={classes.headerTemplate}>
                 <div className={classes.companyName}>
                     {vacancyData.companyName === 'not_mentioned' ? '' : vacancyData.companyName}
@@ -53,11 +54,9 @@ const VacancyDetailed = () => {
                 ))}
             </div>
             <div className={classes.dataBlock}>
-                {vacancyData.postedData}                     
+                {vacancyData.date}                     
             </div>
             <button className={classes.doneButton}>Откликнуться</button>
-            <button className={classes.returnButton} onClick={() => navigate(-1)}>Return back</button>
-
         </div>
     </>
   )
