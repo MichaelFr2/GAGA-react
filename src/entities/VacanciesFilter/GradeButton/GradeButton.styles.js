@@ -17,8 +17,7 @@ const useStyles = createUseStyles({
     flexGrow: 1,
     maxWidth: '300px',
     color: isClicked ? '#fff' : '#6B6B6B',
-    backgroundColor: isClicked ? '#FA631C' : '#F3F3F3', // меняет цвет фона на оранжевый, когда кнопка нажата
-    // другие стили
+    backgroundColor: isClicked ? '#FA631C' : '#F3F3F3',
   }),
 
 
