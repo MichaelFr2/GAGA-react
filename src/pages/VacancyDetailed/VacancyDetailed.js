@@ -1,53 +1,49 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate, useLocation } from 'react-router-dom';
 import useStyles from './VacancyDetailed.styles'
 
 const VacancyDetailed = () => {
-  const data = `
-    E-ngineers company works in telecommunications, banks & risk management, e-commerce and monitoring of software deliveries in large corporates.                  
-  
-    We are focused on development of web and mobile applications as well as DevOps projects.
-
-    Required Skills:
-
-    4+ years of work experience involving quantitative data analysis and complex problem solving 
-    A strong understanding of statistical concepts, measurement issues, and inference techniques  
-    Mastery of SQL, Excel, and either Python or R, along with some experience with Tableau, Mode, or other visualization software 
-    Experience with ETL pipelines, scheduling and productionalizing is a plus  
-    Experience with A/B Testing, Experimentation, or Casual Inference 
-    C1 level of English     
-  `
+  const location = useLocation();
+  const vacancyData = location.state;
   const classes = useStyles();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const navigate = useNavigate();
 
+  if (!vacancyData) {
+    return <div>No data available</div>;
+  }
+
   return (
     <>
         <div className={classes.wrapper}>
             <div className={classes.headerTemplate}>
                 <div className={classes.companyName}>
-                    engineers
+                    {vacancyData.companyName}
                 </div>
                 <div className={classes.vacancyName}>
-                    Senior Data Scientist
+                    {vacancyData.vacancyName}
                 </div>
                 <div className={classes.filters}>
-                    <div className={classes.filter}>Senior</div>
-                    <div className={classes.filter}>Russia</div>
-                    <div className={classes.filter}>Удаленная</div>
+                    <div className={classes.filter}>{vacancyData.gradeFilter}</div>
+                    <div className={classes.filter}>{vacancyData.countryFilter}</div>
+                    <div className={classes.filter}>{vacancyData.occupationFilter}</div>
                 </div>
             </div>
             <div className={classes.salaryWrapper}>
-                60 000$ a year
+                {vacancyData.salary}
             </div>
             <div className={classes.vacancyBody}>
-                {data}                      
+                {vacancyData.vacancyBody.split('\n').map((line, i) => (
+                    <React.Fragment key={i}>
+                        {line}
+                        <br />
+                    </React.Fragment>
+                ))}
             </div>
             <div className={classes.dataBlock}>
-                Posted today                     
+                {vacancyData.postedData}                     
             </div>
             <button className={classes.doneButton}>Откликнуться</button>
             <button className={classes.returnButton} onClick={() => navigate(-1)}>Return back</button>
