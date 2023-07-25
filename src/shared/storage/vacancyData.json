@@ -180,7 +180,7 @@
             "not_mentioned"
         ],
         "companyName": "Luxoft",
-        "grade": "Senior",
+        "grade": "senior",
         "contacts": [
             {
                 "type": "not_mentioned",
@@ -773,10 +773,10 @@
     {
         "isVacancy": true,
         "vacancyName": "Application Support & Administration Specialist",
-        "specialization": "Other",
+        "specialization": "Tech Manager",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "not_mentioned",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
@@ -817,15 +817,15 @@
     {
         "isVacancy": true,
         "vacancyName": "Technical Support Representative",
-        "specialization": "Other",
+        "specialization": "Tech Manager",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "not_mentioned",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
         "companyName": "EBSCO Information Services",
-        "grade": "not_mentioned",
+        "grade": "middle",
         "contacts": [
             {
                 "type": "not_mentioned",
@@ -1131,7 +1131,7 @@
             "not_mentioned"
         ],
         "companyName": "Vodafone",
-        "grade": "Senior",
+        "grade": "senior",
         "contacts": [
             {
                 "type": "not_mentioned",
@@ -1449,15 +1449,15 @@
     {
         "isVacancy": true,
         "vacancyName": "Advisor Senior Specialist in the RISE Cloud Architecture & Advisory Team",
-        "specialization": "Other",
+        "specialization": "Tech Manager",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "not_mentioned",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
         "companyName": "SAP",
-        "grade": "Senior",
+        "grade": "senior",
         "contacts": [
             {
                 "type": "Phone",
