@@ -47,7 +47,7 @@ const useStyles = createUseStyles({
     marginRight: '6px',
     borderRadius: '25px',
     background: 'rgba(243, 243, 243, 0.34)',
-    padding: '2px 11px',
+    padding: '2px 11px 4px 11px',
   },
   salaryWrapper: {
     paddingTop: '14px',

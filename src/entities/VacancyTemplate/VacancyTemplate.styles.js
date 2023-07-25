@@ -51,7 +51,7 @@ const useStyles = createUseStyles({
     marginRight: '3px',
     borderRadius: '25px',
     background: '#F3F3F3',
-    padding: '2px 11px',
+    padding: '2px 11px 4px 11px',
 
   },
   favouriteIcon: {
