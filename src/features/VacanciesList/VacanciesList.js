@@ -39,7 +39,10 @@ const VacanciesList = ({ occupationFilter, countryFilter, specializationFilter, 
 
   return (
     <div className={classes.wrapper}>
-      <div className={classes.header}>Вакансии (всего: {activeVacancies.length})</div>
+      <div className={classes.headerWrapper}>
+        <div className={classes.header}>Вакансии</div>
+        <div className={classes.vacanciesCount}>Всего: {activeVacancies.length}</div>
+      </div>
       {activeVacancies.map((vacancy) => (
         <VacancyTemplate 
             key={vacancy.id} 
