@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
-  wrapper: ({ isClicked }) => ({
+  wrapper: ({ isSelected }) => ({
     flexGrow: 1,
     minWidth: '100px',
     display: 'flex',
@@ -16,8 +16,8 @@ const useStyles = createUseStyles({
     backgroundColor: '#F3F3F3',
     flexGrow: 1,
     maxWidth: '300px',
-    color: isClicked ? '#fff' : '#6B6B6B',
-    backgroundColor: isClicked ? '#FA631C' : '#F3F3F3',
+    color: isSelected ? '#fff' : '#6B6B6B',
+    backgroundColor: isSelected ? '#FA631C' : '#F3F3F3',
   }),
 
 

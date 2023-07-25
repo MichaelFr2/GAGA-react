@@ -13,6 +13,7 @@ const VacancyFeed = () => {
   const [occupationFilter, setOccupationFilter] = useState(state?.occupationFilter || 'no-matter');
   const [countryFilter, setCountryFilter] = useState(state?.countryFilter || 'no-matter');
   const [specializationFilter, setSpecializationFilter] = useState(state?.specializationFilter || 'no-matter');
+  const [gradeFilter, setGradeFilter] = useState(state?.gradeFilter || []); // Add this line
 
   return (
     <>
@@ -22,13 +23,15 @@ const VacancyFeed = () => {
         <VacanciesFilter 
           setOccupationFilter={setOccupationFilter} 
           setCountryFilter={setCountryFilter} 
-          setSpecializationFilter={setSpecializationFilter} 
-          initialFilters={{ occupationFilter, countryFilter, specializationFilter }}
+          setSpecializationFilter={setSpecializationFilter}
+          setGradeFilter={setGradeFilter} // Add this line
+          initialFilters={{ occupationFilter, countryFilter, specializationFilter, gradeFilter }} // Add gradeFilter here
         />
         <VacanciesList 
           occupationFilter={occupationFilter} 
           countryFilter={countryFilter} 
           specializationFilter={specializationFilter}
+          gradeFilter={gradeFilter} // And here
         />
       </div>
       <div className={classes.body}>
@@ -36,5 +39,6 @@ const VacancyFeed = () => {
     </>
   )
 }
+
 
 export default VacancyFeed

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import useStyles from './GradeButton.styles';
 
-const GradeButton = ({ buttonTitle, icon: Icon }) => {
-  const [isClicked, setIsClicked] = useState(false);
-  const classes = useStyles({ isClicked });
+const GradeButton = ({ buttonTitle, icon: Icon, onGradeClick, isSelected }) => {
+  const classes = useStyles({ isSelected });
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
+    onGradeClick(buttonTitle);
+    console.log('click');
   };
 
   return (

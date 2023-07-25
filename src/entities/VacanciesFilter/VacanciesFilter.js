@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import useStyles from './VacanciesFilter.styles'
 import GradeButton from './GradeButton/GradeButton'
 import MiddleIcon from '../../shared/icons/MiddleIcon'
@@ -6,13 +6,14 @@ import JuniorIcon from '../../shared/icons/JuniorIcon'
 import SeniorIcon from '../../shared/icons/SeniorIcon'
 import BottomArrow from '../../shared/icons/BottomArrow'
 
-const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializationFilter, initialFilters }) => {
+const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializationFilter, setGradeFilter, initialFilters }) => {
     const classes = useStyles()
 
     // Use initial filters from props
     const [occupation, setOccupation] = useState(initialFilters.occupationFilter);
     const [country, setCountry] = useState(initialFilters.countryFilter);
     const [specialization, setSpecialization] = useState(initialFilters.specializationFilter);
+    const [selectedGrades, setSelectedGrades] = useState(initialFilters.gradeFilter); // Use initial grade filter
 
     const handleOccupationChange = (event) => {
         setOccupation(event.target.value);
@@ -28,6 +29,21 @@ const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializat
         setSpecialization(event.target.value);
         setSpecializationFilter(event.target.value);
     }
+
+    const handleGradeClick = (grade) => {
+        setSelectedGrades((prevSelected) => {
+          if (prevSelected.includes(grade)) {
+            return prevSelected.filter((g) => g !== grade);
+          } else {
+            return [...prevSelected, grade];
+          }
+        });
+      };
+    useEffect(() => {
+        setGradeFilter(selectedGrades);
+        console.log('Updating grade filter with:', selectedGrades);
+
+    }, [selectedGrades]);
 
     return (
         <div className={classes.wrapper}>
@@ -83,9 +99,24 @@ const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializat
             <div className={classes.gradeFilter}>
                 <div className={classes.filterTitle}>Грейд</div>
                 <div className={classes.gradeWrapper}>
-                    <GradeButton buttonTitle="Junior" icon={JuniorIcon} />
-                    <GradeButton buttonTitle="Middle" icon={MiddleIcon} />
-                    <GradeButton buttonTitle="Senior" icon={SeniorIcon} />
+                <GradeButton
+                    buttonTitle="junior"
+                    icon={JuniorIcon}
+                    isSelected={selectedGrades.includes('junior')}
+                    onGradeClick={handleGradeClick}
+                />
+                <GradeButton
+                    buttonTitle="middle"
+                    icon={MiddleIcon}
+                    isSelected={selectedGrades.includes('middle')}
+                    onGradeClick={handleGradeClick}
+                />
+                <GradeButton
+                    buttonTitle="senior"
+                    icon={SeniorIcon}
+                    isSelected={selectedGrades.includes('senior')}
+                    onGradeClick={handleGradeClick}
+                />
                 </div>
             </div>
             <button className={classes.doneButton}>Поиск</button>

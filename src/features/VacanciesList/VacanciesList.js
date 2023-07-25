@@ -3,7 +3,7 @@ import useStyles from './VacanciesList.styles'
 import VacancyTemplate from '../../entities/VacancyTemplate/VacancyTemplate'
 import vacancyData from '../../shared/storage/vacancyData.json'
 
-const VacanciesList = ({ occupationFilter, countryFilter, specializationFilter }) => {
+const VacanciesList = ({ occupationFilter, countryFilter, specializationFilter, gradeFilter }) => {
   const classes = useStyles()
 
   const activeVacancies = vacancyData
@@ -29,6 +29,12 @@ const VacanciesList = ({ occupationFilter, countryFilter, specializationFilter }
         return true;
       }
       return vacancy.country === countryFilter;
+    })
+    .filter(vacancy => {
+      if (gradeFilter.includes('no-matter') || gradeFilter.length === 0) {
+        return true;
+      }
+      return gradeFilter.includes(vacancy.grade);
     });
 
   return (
@@ -38,11 +44,12 @@ const VacanciesList = ({ occupationFilter, countryFilter, specializationFilter }
         <VacancyTemplate 
             key={vacancy.id} 
             vacancyData={vacancy} 
-            filters={{ occupationFilter, countryFilter, specializationFilter }} 
+            filters={{ occupationFilter, countryFilter, specializationFilter, gradeFilter }} 
         /> 
       ))}  
     </div>
   )
 }
+
 
 export default VacanciesList
