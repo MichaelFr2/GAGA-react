@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import useStyles from './VacancyTemplate.styles'
 import FavouriteIcon from '../../shared/icons/FavouriteIcon';
 import { useNavigate } from 'react-router-dom';
-const VacancyTemplate = ({ vacancyData }) => {
+const VacancyTemplate = ({ vacancyData, filters }) => {
     const classes = useStyles();
     const navigate = useNavigate();
     const [favourite, setFavourite] = useState(false); // новое состояние
@@ -12,9 +12,8 @@ const VacancyTemplate = ({ vacancyData }) => {
         setFavourite(!favourite); // меняем состояние при клике
     }
 
-
     const handleRedirect = (event) => {
-        navigate('/vacancy', {state: vacancyData});
+        navigate('/vacancy', { state: { vacancyData, filters } });
     }
     const renderOccupationType = () => {
         if(Array.isArray(vacancyData.occupationType)) {

@@ -35,8 +35,12 @@ const VacanciesList = ({ occupationFilter, countryFilter, specializationFilter }
     <div className={classes.wrapper}>
       <div className={classes.header}>Вакансии (всего: {activeVacancies.length})</div>
       {activeVacancies.map((vacancy) => (
-        <VacancyTemplate key={vacancy.id} vacancyData={vacancy} /> 
-      ))}    
+        <VacancyTemplate 
+            key={vacancy.id} 
+            vacancyData={vacancy} 
+            filters={{ occupationFilter, countryFilter, specializationFilter }} 
+        /> 
+      ))}  
     </div>
   )
 }

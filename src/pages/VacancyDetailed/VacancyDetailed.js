@@ -5,7 +5,7 @@ import ReturnArrow from '../../shared/icons/ReturnArrow';
 
 const VacancyDetailed = () => {
   const location = useLocation();
-  const vacancyData = location.state;
+  const { vacancyData, filters } = location.state;
   const classes = useStyles();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,7 +28,7 @@ const VacancyDetailed = () => {
   return (
     <>
         <div className={classes.wrapper}>
-            <button className={classes.returnButton} onClick={() => navigate(-1)}> <ReturnArrow /> Назад </button>
+            <button className={classes.returnButton} onClick={() => navigate('/form', { state: filters })}> <ReturnArrow /> Назад </button>
             <div className={classes.headerTemplate}>
                 <div className={classes.companyName}>
                     {vacancyData.companyName === 'not_mentioned' ? '' : vacancyData.companyName}
