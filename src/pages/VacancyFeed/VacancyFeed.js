@@ -23,11 +23,7 @@ const VacancyFeed = () => {
           setOccupationFilter={setOccupationFilter} 
           setCountryFilter={setCountryFilter} 
           setSpecializationFilter={setSpecializationFilter} 
-          initialFilters={{ 
-            occupationFilter, 
-            countryFilter, 
-            specializationFilter 
-          }} 
+          initialFilters={{ occupationFilter, countryFilter, specializationFilter }}
         />
         <VacanciesList 
           occupationFilter={occupationFilter} 
