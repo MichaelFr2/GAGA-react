@@ -54,6 +54,9 @@ const useStyles = createUseStyles({
     padding: '2px 11px',
 
   },
+  favouriteIcon: {
+    WebkitTapHighlightColor: 'transparent',
+  }
 });
 
 export default useStyles;
