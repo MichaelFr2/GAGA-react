@@ -1,36 +1,15 @@
 [   
     {
-        "id": 1111,
-        "companyName": "engineers",
-        "vacancyName": "Senior Data Scientist",
-        "salary": "60 000$ a year",
-        "grade": "senior",
-        "country": "Russia",
-        "occupationType": "Remote",
-        "date": "Posted today",
-        "vacancyText": "E-ngineers company works in telecommunications, banks & risk management, e-commerce and monitoring of software deliveries in large corporates. We are focused on development of web and mobile applications as well as DevOps projects.\n\nRequired Skills:\n\n4+ years of work experience involving quantitative data analysis and complex problem solving\nA strong understanding of statistical concepts, measurement issues, and inference techniques\nMastery of SQL, Excel, and either Python or R, along with some experience with Tableau, Mode, or other visualization software\nExperience with ETL pipelines, scheduling and productionalizing is a plus\nExperience with A/B Testing, Experimentation, or Casual Inference\nC1 level of English"
-    },
-    {
         "id": 2222,
         "companyName": "ZF",
         "vacancyName": "Production Quality Engineer",
         "salary": "60 000$ a year",
+        "specialization": "Other",
         "grade": "senior",
-        "country": "Турция",
-        "occupationType": "Onsite",
+        "country": "Turkey",
+        "occupationType": "удаленная",
         "date": "Posted today",
         "vacancyText": "Production Quality Engineer (m/f/d)\nZF, Измир/nYour tasks:\n\n🔹 To ensure the product quality and to ensure that the production quality control (process and final) departments are carrying out their tasks in a good coordination and effective manner\n🔹 Together with Production people, to analyze and create solutions for customer complaints and internal quality-related problems, to prevent their reoccurrence, to ensure the implementation of correction and preventive actions, FTA and 8D activities, to follow up the open correction and preventive actions\n🔹 To manage APQP & PPAP activities as a project team member during the new product launch process\n🔹 To perform process and product audits and follow the next steps for open topics and manage Quarantine area\n🔹 To prepare Quality related reports (weekly/monthly)\n\nYour profile:\n\n🔹 Graduated from Mechanical or Industrial Engineering departments of universities, with at least 3 year of production quality control or project experience in the automotive industry\n🔹 Preferably have experience in IATF 16949 QMS and have IATF 16949 Internal auditor certificate, have knowledge of process and system audit methods  \n🔹 Preferably have knowledge of machining and assembly production processes and products\n🔹 Knowledge of statistical techniques and problem solving methods, knowledge of measurement methods and the use of relevant test equipment\n🔹 Good English speaking and writing skills"
-    },
-    {
-        "id": 3333,
-        "companyName": "rb-technologies",
-        "vacancyName": "Senior Data Scientist",
-        "salary": "60 000$ a year",
-        "grade": "senior",
-        "countryFilter": "Russia",
-        "occupationType": "Remote",
-        "date": "Posted today",
-        "vacancyText": "E-ngineers company works in telecommunications, banks & risk management, e-commerce and monitoring of software deliveries in large corporates. We are focused on development of web and mobile applications as well as DevOps projects.\n\nRequired Skills:\n\n4+ years of work experience involving quantitative data analysis and complex problem solving\nA strong understanding of statistical concepts, measurement issues, and inference techniques\nMastery of SQL, Excel, and either Python or R, along with some experience with Tableau, Mode, or other visualization software\nExperience with ETL pipelines, scheduling and productionalizing is a plus\nExperience with A/B Testing, Experimentation, or Casual Inference\nC1 level of English"
     },
     {
         "isVacancy": true,
@@ -148,7 +127,7 @@
         "specialization": "QA",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "Измир",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
@@ -196,7 +175,7 @@
         "specialization": "Analyst",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "Стамбул",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
@@ -327,7 +306,7 @@
         "specialization": "Analyst",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "Стамбул",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
@@ -429,7 +408,7 @@
         "salaryCurrency": "not_mentioned",
         "country": "not_mentioned",
         "occupationType": [
-            "офис",
+            "office",
             "удаленная"
         ],
         "companyName": "Ericsson",
@@ -474,7 +453,7 @@
         "salaryCurrency": "RUB",
         "country": "not_mentioned",
         "occupationType": [
-            "remote",
+            "удаленная",
             "office"
         ],
         "companyName": "Pari.ru",
@@ -734,7 +713,7 @@
         "salaryCurrency": "not_mentioned",
         "country": "not_mentioned",
         "occupationType": [
-            "офис"
+            "office"
         ],
         "companyName": "Lenkep",
         "grade": "not_mentioned",
@@ -754,7 +733,7 @@
         "specialization": "Developer",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "Турция",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
@@ -885,7 +864,7 @@
         "specialization": "QA",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "Турция",
+        "country": "Turkey",
         "occupationType": [
             "удаленная"
         ],
@@ -1323,7 +1302,7 @@
         "specialization": "Developer",
         "salary": "not_mentioned",
         "salaryCurrency": "not_mentioned",
-        "country": "Турция",
+        "country": "Turkey",
         "occupationType": [
             "not_mentioned"
         ],
@@ -1365,7 +1344,7 @@
         "country": "not_mentioned",
         "occupationType": [
             "удаленная",
-            "офис"
+            "office"
         ],
         "companyName": "Akvelon",
         "grade": "senior",
