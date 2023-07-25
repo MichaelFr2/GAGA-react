@@ -56,6 +56,7 @@ const useStyles = createUseStyles({
   },
   favouriteIcon: {
     WebkitTapHighlightColor: 'transparent',
+    outline: 'none',
   }
 });
 
