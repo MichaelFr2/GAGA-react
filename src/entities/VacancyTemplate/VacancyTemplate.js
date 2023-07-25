@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useStyles from './VacancyTemplate.styles'
 import FavouriteIcon from '../../shared/icons/FavouriteIcon';
 import { useNavigate } from 'react-router-dom';
 const VacancyTemplate = ({ vacancyData }) => {
     const classes = useStyles();
     const navigate = useNavigate();
+    const [favourite, setFavourite] = useState(false); // новое состояние
 
-    const handleRedirect = () => {
+    const handleFavouriteClick = (event) => {
+        event.stopPropagation(); // останавливаем всплытие события
+        setFavourite(!favourite); // меняем состояние при клике
+    }
+
+
+    const handleRedirect = (event) => {
         navigate('/vacancy', {state: vacancyData});
     }
     const renderOccupationType = () => {
@@ -25,8 +32,8 @@ const VacancyTemplate = ({ vacancyData }) => {
                 <div className={classes.companyName}>
                     {vacancyData.companyName === 'not_mentioned' ? '' : vacancyData.companyName}
                 </div>
-                <div className={classes.favouriteIcon}>
-                    <FavouriteIcon />
+                <div className={classes.favouriteIcon} onClick={handleFavouriteClick}>
+                    <FavouriteIcon fillColor={favourite ? "#E44900" : "#D3D3D3"} />
                 </div>
             </div>
             <div className={classes.vacancyName}>
