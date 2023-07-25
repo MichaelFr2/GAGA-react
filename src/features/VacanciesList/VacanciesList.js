@@ -1,5 +1,5 @@
 import React from 'react'
-import useStyles from './VacnciesList.styles'
+import useStyles from './VacanciesList.styles'
 import VacancyTemplate from '../../entities/VacancyTemplate/VacancyTemplate'
 import vacancyData from '../../shared/storage/vacancyData.json'
 
