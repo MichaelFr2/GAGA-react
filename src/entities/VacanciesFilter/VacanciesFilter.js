@@ -54,8 +54,8 @@ const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializat
                 <div className={classes.filterTitle}>Специализация</div>
                 <div className={classes.selectWrapper}>
                     <select className={classes.filterSelect} onChange={handleSpecializationChange} value={specialization}>
-                        <option value="Developer">Разработчик</option>
-                        <option value="Analyst">Аналитик</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Analyst">Analyst</option>
                         <option value="QA">QA</option>
                         <option value="Marketing">Marketing</option>
                         <option value="Project manager">Project manager</option>
