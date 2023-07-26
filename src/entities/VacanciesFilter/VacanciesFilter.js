@@ -59,8 +59,8 @@ const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializat
                         <option value="QA">QA</option>
                         <option value="Marketing">Marketing</option>
                         <option value="Project manager">Project manager</option>
-                        <option value="Tech Manager">Tech manager</option>
-                        <option value="UI/UX designer">UI/UX</option>
+                        {/* <option value="Tech Manager">Tech manager</option> */}
+                        {/* <option value="UI/UX designer">UI/UX</option> */}
                         <option value="DevOps">DevOps</option>
                         <option value="no-matter">Любая</option>
                     </select>
@@ -74,8 +74,8 @@ const VacanciesFilter = ({ setOccupationFilter, setCountryFilter, setSpecializat
                 <div className={classes.selectWrapper}>
                     <select className={classes.filterSelect} onChange={handleCountryChange} value={country}>
                         <option value="Turkey">Турция</option>
-                        <option value="Serbia">Сербия</option>
-                        <option value="Indonesia">Индонезия</option>
+                        {/* <option value="Serbia">Сербия</option> */}
+                        <option value="Russia">Россия</option>
                         <option value="no-matter">Любая</option>
                     </select>
                     <div className={classes.iconWrapper}>
