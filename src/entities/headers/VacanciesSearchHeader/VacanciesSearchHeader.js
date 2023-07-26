@@ -12,11 +12,11 @@ const VacanciesSearchHeader = () => {
         </div>
         <div className={classes.textBlock}>
           <div className={classes.mainText}>
-            Подбери лучшую вакансию для себя!
+          Настрой свой глобальный поиск вакансий!
           </div>
-          <div className={classes.additionalText}>
+          {/* <div className={classes.additionalText}>
             Заполни анкету!
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.gridBackground}>
