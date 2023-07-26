@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route index element={<ProductList />}/>
         {/* <Route path={'/form'} element={<Form />}/> */}
-        <Route path={'/form'} element={<VacancyFeed  />}/>
+        <Route path={'/vacancies'} element={<VacancyFeed  />}/>
         <Route path={'/vacancy'} element={<VacancyDetailed  />}/>
       </Routes>
     </div>
